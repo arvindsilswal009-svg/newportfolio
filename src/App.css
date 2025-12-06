@@ -195,7 +195,7 @@ font-size: large;
      box-shadow: 0px 5px 5px 0px black;
 }
 .btn{
-    width: 180px;
+    width: 100px;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
@@ -253,13 +253,13 @@ font-size: large;
     border-radius: 12px;
     padding: 5px;
     height:60px ;
-    width: 70px;
+    width: 100px;
     border: 1px solid white;
     text-decoration: none;
     box-shadow:0px 5px 5px 0px black ;
 
 }
-.incards, .incards1:hover{
+.incards:hover{
    
    
     padding: 5px;
@@ -267,4 +267,62 @@ font-size: large;
     width: 65px;
    
     box-shadow:0px 8px 8px 0px black ;
+}
+/* -------------------------
+   RESPONSIVE BREAKPOINTS
+-------------------------- */
+@media (max-width: 768px) {
+  
+  /* Make sections vertical */
+  .first,
+  .second,
+  .third,
+  .fourth {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Fix cards */
+  .cards,
+  .project {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* Fix left-right sections */
+  .left,
+  .right,
+  .left1,
+  .right1 {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    height: auto;
+  }
+
+  /* Navbar */
+  .containernav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .na {
+    margin: 5px;
+  }
+
+  /* Progress bars */
+  .bar,
+  .bar2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+
+  /* Logo */
+  .logo {
+    height: auto;
+    width: 100%;
+  }
 }

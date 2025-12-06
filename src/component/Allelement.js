@@ -135,8 +135,8 @@ function Allelement() {
                         <h5>Tools and Platform :</h5>
                         <br/><br/>
                         <div className="cards">
-<a className="incards1"><i class="fa-brands fa-git-alt fa-2x">git</i></a> <br/><br/>
-<a className="incards1"><i class="fa-brands fa-github fa-2x">github</i></a><br/><br/>
+<a className="incards1"><i class="fa-brands fa-git-alt ">git</i></a> <br/><br/>
+<a className="incards1"><i class="fa-brands fa-github ">github</i></a><br/><br/>
 <a className="incards1"><label style={{fontSize:"30px"}}>vs code</label></a>
 </div>
                     </div>
@@ -154,7 +154,8 @@ function Allelement() {
                         <p>This is a calculator app . created by using HTML , CSS , javascript and react.js .<br /> we can perrform multiple mathmatical operations in it.</p>
                         <center>Visit the Calculator app :</center>
                         <center>
-                            <a className="btn" href=" https://arvindsilswal009-svg.github.io/calculator/">Live Link</a>
+                            <a className="btn" href=" https://arvindsilswal009-svg.github.io/calculator/">Live Link</a>&emsp;&emsp;
+                             <a className="btn" href=" https://github.com/arvindsilswal009-svg/calculator">Code Link</a>
                         </center>  </div>
 
                     <div className="project" >
@@ -163,7 +164,8 @@ function Allelement() {
                         <p>This is a Weather app . created by using HTML , CSS , javascript and react.js .<br /> we can search and get live weather details of any city </p>
                         <center>Visit the Weatherapp :</center>
                         <center>
-                            <a className="btn" href=" https://arvindsilswal009-svg.github.io/Weatherapp/" >Live Link</a>
+                            <a className="btn" href=" https://arvindsilswal009-svg.github.io/Weatherapp/" >Live Link</a>&emsp;&emsp;
+                             <a className="btn" href="https://github.com/arvindsilswal009-svg/Weatherapp">Code Link</a>
                         </center>
                     </div>
 
@@ -173,7 +175,7 @@ function Allelement() {
                         <p>This is a calculator app . created by using HTML , CSS , javascript and react.js .<br /> we can perrform multiple mathmatical operations in it.</p>
                         <center>Visit my Portfolio :</center>
                         <center>
-                            <button className="btn">Live Link</button>
+                             <a className="btn" href=" https://github.com/arvindsilswal009-svg/MYportfolio">Code Link</a>
                         </center> </div>
                 </div>
 <hr className="hr" />
