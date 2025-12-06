@@ -72,16 +72,14 @@ function Allelement() {
                     <div className="left1">
                         <h4> School Education</h4>
                         <br />
-                        <div style={{ height: "130px", border: "1px solid white", width: "100%", padding: "10px", borderRadius: "12px",
-                             boxShadow: "0px 5px 4px 0px black" }}>
+                        <div className="educationcard" >
 
                            <i class="fa-solid fa-book"></i> &emsp; 10th - S.M.V. Sr. Sec. Public School <br/>&emsp;&emsp; &emsp;&emsp;&emsp; Jakhera(HP) <br />
                          <i class="fa-sharp-duotone fa-solid fa-marker"></i>&emsp;  61.5%  <br />
                           <i class="fa-regular fa-calendar"></i>&emsp;  ( 2018-19 )
                         </div>
                         <br />
-                        <div style={{ height: "130px", border: "1px solid white", width: "100%", padding: "10px", borderRadius: "12px",
-                             boxShadow: "0px 5px 4px 0px black" }}>
+                        <div className="educationcard" >
 
                          <i class="fa-solid fa-book"></i>  &emsp; 12th -  S.M.V. Sr. Sec. Public School <br/>&emsp;&emsp;&emsp;&emsp;&emsp; Jakhera(HP) <br />
                           <i class="fa-sharp-duotone fa-solid fa-marker"></i>&emsp; 84.5%  <br />
@@ -90,8 +88,7 @@ function Allelement() {
                     </div>
                     <div className="right1">
                         <h4>college Education</h4><br /><br />
-                        <div style={{ height: "130px", border: "1px solid white", width: "100%", padding: "10px", borderRadius: "12px", 
-                           marginTop:"-25px", boxShadow: "0px 5px 4px 0px black" }}>
+                        <div className="educationcard1" >
 
                          <i class="fa-solid fa-graduation-cap"></i>   Bachelor of Computer Applications (BCA)<br />
                           <i class="fa-solid fa-building-columns"></i> &emsp;&emsp; Himachal Pradesh University (HPU)<br />
@@ -115,29 +112,33 @@ function Allelement() {
 
                     <div className="left1" >
 <h5>Front End Developement :</h5>  <br/><br/>
-<div>
+<div className="cards">
+    <div>
                  
-<a><i class="fa-brands fa-html5 fa-1.2x"></i> HTML</a>   <br/><br/>
-<a><i class="fa-brands fa-css3"></i> CSS</a>   <br/>        <br/>
-<a><i class="fa-brands fa-bootstrap"> </i> Bootstrap</a> <br/>  <br/>
-<a><i class="fa-brands fa-js"></i>  javascript</a>         <br/><br/>
+<a className="incards"><i class="fa-brands fa-html5 fa-1.2x"></i> HTML</a>   <br/><br/>
+<a className="incards"><i class="fa-brands fa-css3"></i> CSS</a>   <br/>        <br/>
+<a className="incards"><i class="fa-brands fa-bootstrap"> </i> Bootstrap</a> <br/>  <br/>
+<a className="incards"><i class="fa-brands fa-js"></i>  javascript</a>         <br/><br/>
 </div>
-<div style={{marginLeft:"40%" ,marginTop:"-53%"}}>
+<div style={{marginLeft:"52%" ,marginTop:"-71%"}}>
     
-<a><i class="fa-brands fa-react"></i> React.js</a>        <br/><br/>
-<a><i class="fa-brands fa-node-js"></i> Node.js</a>       <br/><br/>
-<a><i class="fa-solid fa-code "></i>  MySql</a>    
+<a className="incards"><i class="fa-brands fa-react"></i> React.js</a>        <br/><br/>
+<a className="incards"><i class="fa-brands fa-node-js"></i> Node.js</a>       <br/><br/>
+<a  className="incards"><i class="fa-solid fa-code "></i>  MySql</a>    
 
 
+</div>
 </div>
                     </div>
 
                     <div className="right1">
                         <h5>Tools and Platform :</h5>
                         <br/><br/>
-<i class="fa-brands fa-git-alt fa-2x">git</i> <br/><br/>
-<i class="fa-brands fa-github fa-2x">github</i><br/><br/>
-<label style={{fontSize:"30px"}}>vs code</label>
+                        <div className="cards">
+<a className="incards1"><i class="fa-brands fa-git-alt fa-2x">git</i></a> <br/><br/>
+<a className="incards1"><i class="fa-brands fa-github fa-2x">github</i></a><br/><br/>
+<a className="incards1"><label style={{fontSize:"30px"}}>vs code</label></a>
+</div>
                     </div>
 
                 </div>

@@ -114,6 +114,7 @@ margin-top: 40px;
 }
 
 .right1 {
+    width: 500px;
      margin-left: -20%;
     height: 300px;
     padding: 50px;
@@ -146,6 +147,35 @@ html {
 }
 .smalltext{
 font-size: large;
+}
+.educationcard{
+    height: 130px ;
+    border:1px solid white ;
+    width:100% ;
+    padding:10px ;
+    border-radius:12px ;
+    box-shadow: 0px 5px 4px 0px black;
+
+}
+.educationcard1{
+    height: 130px ;
+    border:1px solid white ;
+    width:100% ;
+    padding:10px ;
+    border-radius:12px ;
+    box-shadow: 0px 5px 4px 0px black;
+    margin-top: -25px;
+
+}
+.educationcard:hover{
+    height: 140px;
+    background-color: gray;
+    box-shadow: 0px 10px 8px 0px black;
+}
+.educationcard1:hover{
+    height: 140px;
+    background-color: gray;
+     box-shadow: 0px 10px 8px 0px black;
 }
 .project{
     padding: 10px;
@@ -199,4 +229,42 @@ font-size: large;
     color: black;
     justify-content: center;
     font-weight: bolder;
+}
+.cards{
+    border-radius: 12px;
+    padding: 20px;
+    height:250px ;
+    width: 340px;
+    border: 1px solid white;
+     box-shadow:0px 5px 5px 0px black ;
+}
+.incards{
+    color: white;
+    border-radius: 12px;
+    padding: 5px;
+    height:25px ;
+    width: 55px;
+    border: 1px solid white;
+    text-decoration: none;
+    box-shadow:0px 5px 5px 0px black ;
+}
+.incards1{
+     color: white;
+    border-radius: 12px;
+    padding: 5px;
+    height:60px ;
+    width: 70px;
+    border: 1px solid white;
+    text-decoration: none;
+    box-shadow:0px 5px 5px 0px black ;
+
+}
+.incards, .incards1:hover{
+   
+   
+    padding: 5px;
+    height:35px ;
+    width: 65px;
+   
+    box-shadow:0px 8px 8px 0px black ;
 }
