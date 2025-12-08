@@ -8,7 +8,7 @@ function App() {
   return (
     <div> 
 
-     <BrowserRouter basename="/MYportfolio">
+     <BrowserRouter basename="/newportfolio">
       <Routes>
         <Route path="/" element={<Intro />} />
       </Routes>
