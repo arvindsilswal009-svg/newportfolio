@@ -31,36 +31,36 @@ function Intro() {
 
     return (
   <>
-        <div class="scroll-up-btn">
-          <i class="fas fa-angle-up"></i>
+        <div className="scroll-up-btn">
+          <i className="fas fa-angle-up"></i>
         </div>
       
        
-        <nav class="navbar">
-          <div class="max-width">
-            <div class="logo"><a href="#"><span>Arvind's</span><span> Portfolio</span></a></div>
-            <ul class="menu">
-              <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
-              <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-               <li><a href="#education" class="menu-btn"><strong>Education</strong></a></li>
-              <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
-              <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
-              <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
-           <li> <a id="openDocBtn" class="btn" onClick={handleDownload} >Downlode Resume</a>  </li>
+        <nav className="navbar">
+          <div className="max-width">
+            <div className="logo"><a href="#"><span>Arvind's</span><span> Portfolio</span></a></div>
+            <ul className="menu">
+              <li><a href="#home" className="menu-btn"><strong>Home</strong></a></li>
+              <li><a href="#about" className="menu-btn"><strong>About</strong></a></li>
+               <li><a href="#education" className="menu-btn"><strong>Education</strong></a></li>
+              <li><a href="#skills" className="menu-btn"><strong>Skills</strong></a></li>
+              <li><a href="#projects" className="menu-btn"><strong>Projects</strong></a></li>
+              <li><a href="#contact" className="menu-btn"><strong>Contact</strong></a></li>
+           <li> <a id="openDocBtn" className="btn" onClick={handleDownload} >Downlode Resume</a>  </li>
             </ul>
-            <div class="menu-btn">
-              <i class="fas fa-bars"></i>
+            <div className="menu-btn">
+              <i className="fas fa-bars"></i>
             </div>
           </div>
         </nav>
       
         
-        <section class="home" id="home">
-          <div class="max-width">
-            <div class="home-content">
-              <div class="text-1">Hello, This is</div>
-              <div class="text-2">Arvind Silswal</div>
-              <div class="text-3">And I'm a <span ref={el} ></span></div>
+        <section className="home" id="home">
+          <div className="max-width">
+            <div className="home-content">
+              <div className="text-1">Hello, This is</div>
+              <div className="text-2">Arvind Silswal</div>
+              <div className="text-3">And I'm a <span ref={el} ></span></div>
               
             </div>
           </div>

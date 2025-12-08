@@ -18,18 +18,18 @@ function About(){
            }, []);
             return(
             <>
-         <section class="about" id="about">
-          <div class="max-width">
-            <h2 class="title">About Me</h2>
-            <div class="about-content">
-              <div class="column left ">
-                <img src="two.jpg" alt=""/>
+         <section className="about" id="about">
+          <div className="max-width">
+            <h2 className="title">About Me</h2>
+            <div className="about-content">
+              <div className="column left ">
+                <img src="/images/aboutpic.jpg" alt=""/>
               </div>
-              <div class="column right mt-5">
-                <div class="text">I'm Arvind Silswal and I'm a <span class="typing-2" ref={el}>Web developer</span></div>
+              <div className="column right mt-5">
+                <div className="text">I'm Arvind Silswal and I'm a <span className="typing-2" ref={el}>Web developer</span></div>
                 <p>Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills & enhance learning in the field of work. Capable of mastering new technologies.</p>
                 <br/>
-                <div class="text">Why Work With Me</div>
+                <div className="text">Why Work With Me</div>
                 <p>I'm a great communicator & love to invest the necessary time to understand the customer's problem very well.</p>
       
                 

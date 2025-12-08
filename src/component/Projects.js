@@ -1,14 +1,14 @@
 import react from "react";
  function Projects(){
     return(
-         <section class="projects" id="projects">
-          <div class="max-width">
-            <h1 class="title">My Projects</h1>
-            <div class="carousel owl-carousel">
-              <div class="card">
-                <div class="box">
+         <section className="projects" id="projects">
+          <div className="max-width">
+            <h1 className="title">My Projects</h1>
+            <div className="carousel owl-carousel">
+              <div className="card">
+                <div className="box">
                   <img src="" alt=""/>
-                  <div class="  text">Calculator</div>
+                  <div className="  text">Calculator</div>
                   <p>This is a Calculator app for calculating mathematical calculations .
                     technologies used in developing the calculator are html, css, Bootstrap,JavaScript, react.js .
                     </p>
@@ -16,21 +16,21 @@ import react from "react";
                              <a className="btn" href=" https://github.com/arvindsilswal009-svg/calculator">Code Link</a>
                       </div>
               </div>
-                <div class="card">
-                <div class="box">
-                  <img src="weatherapp.jpg" alt="weatherapp.jpg"/>
-                  <div class="text">Weather App</div>
-                  <p>#Project Details:- Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div className="card">
+                <div className="box">
+                  <img src="weatherapp.jpg" alt=""/>
+                  <div className="text">Weather App</div>
+                  <p>This is a weather app website developed using Html , css , bootstrap ,javascript ,and with library like React .js . we can know teh weather conditions of any city just by searching the city name,it shows current weather condition with the help of weather api</p>
                    <a className="btn" href=" https://arvindsilswal009-svg.github.io/Weatherapp/">Live Link</a>&emsp;&emsp;
                             <a className="btn" href="https://github.com/arvindsilswal009-svg/Weatherapp">Code Link</a>
                      
                 </div>
               </div>
-              <div class="card">
-                <div class="box">
-                  <img src="/public/portfolio.jpg" alt=""/>
-                  <div class="text">Portfolio</div>
-                  <p>#Project Details:- Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div className="card">
+                <div className="box">
+                  <img src="/images/portfolio.jpg" alt=""/>
+                  <div className="text">Portfolio</div>
+                  <p>Here is my portfolio.</p>
                    <a className="btn" href=" https://arvindsilswal009-svg.github.io/MYportfolio/">Live Link</a>&emsp;&emsp;
                               <a className="btn" href=" https://github.com/arvindsilswal009-svg/MYportfolio">Code Link</a>
                      

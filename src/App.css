@@ -350,6 +350,88 @@ background-clip: text;
   background: none;
   animation: pulsate 1s ease-in-out;
 }
+/* education*/
+.education {
+  display: flex;
+  background: url("/public/images/educationback.avif") no-repeat
+    center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.education .title::after {
+  background: #B30F3B;
+background: linear-gradient(to right, #B30F3B 0%, #7745FF 79%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.education .title1 {
+  background: #B30F3B;
+background: linear-gradient(to left, #B30F3B 10%, #7745FF 79%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.education-content{
+  display: flex;
+  flex: 1;
+  gap: 100px;
+
+}
+.education .education-content .left {
+  width: 100%;
+}
+.education .education-content .right {
+  width: 100%;
+}
+.educard {
+  background: #1d1d1d;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 10px;
+  line-height: 1.6rem;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-left: 4px solid #4caf50; /* Green accent */
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+
+.educard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
+
+
+.educard i {
+  color: #4caf50;
+  margin-right: 8px;
+}
+
+@media (max-width: 900px) {
+  .educard{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .educard {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .title1 {
+    font-size: 1.1rem;
+  }
+}
 
 
 /*  Skills  */
@@ -953,3 +1035,4 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+
