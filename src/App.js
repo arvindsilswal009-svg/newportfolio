@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Allelement from './component/Allelement';
-import Nav from './component/Nav';
+
+import Intro from './component/Intro';
+
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
 
      <BrowserRouter basename="/MYportfolio">
       <Routes>
-        <Route path="/" element={<Allelement />} />
+        <Route path="/" element={<Intro />} />
       </Routes>
     </BrowserRouter>
   
