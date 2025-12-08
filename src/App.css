@@ -346,6 +346,7 @@ background-clip: text;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
+  background: transparent;
 }
 
 .about .about-content .right {

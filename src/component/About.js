@@ -23,7 +23,7 @@ function About(){
             <h2 className="title">About Me</h2>
             <div className="about-content">
               <div className="column left ">
-                 <img src="./images/aboutpic.jpg"/>
+                 <img src="./images/first.webp"/>
               </div>
               <div className="column right mt-5">
                 <div className="text">I'm Arvind Silswal and I'm a <span className="typing-2" ref={el}>Web developer</span></div>
