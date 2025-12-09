@@ -121,28 +121,31 @@ section .title::after {
 
 /*  Navbar  */
 .navbar {
+  height: auto;
+  background:black;
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+   padding: 1px;
   font-family: "Ubuntu", sans-serif;
   transition: all 2.3s ease;
 }
 
 .navbar.sticky {
-  padding: 15px 0;
+  padding: 10px 0;
   background: #1e3551;
 }
 
 .navbar .max-width {
+ width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
 }
 
 .navbar .logo a {
   color: #fff;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -169,7 +172,7 @@ section .title::after {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  margin-left: 20px;
+  margin-left: 30px;
   transition: color 0.3s ease;
 }
 
@@ -213,11 +216,8 @@ section .title::after {
 
 /*  Menu Btn  */
 .menu-btn {
-  padding: 5px;
+ 
   text-decoration: none;
-  border: 1px solid white;
-  background-color: rgb(57, 49, 49);
-  border-radius: 10px;
   color: #fff;
   font-size: 23px;
   cursor: pointer;
@@ -225,6 +225,7 @@ section .title::after {
   box-shadow: 0px 10px 8px 0px black;
 }
 .menu-btn:hover{
+  color: orangered;
   filter: brightness(90%);
 }
 .scroll-up-btn {
@@ -464,7 +465,7 @@ background-clip: text;
 
 @media (max-width: 600px) {
   .educard {
-    padding: 15px;
+    padding: 10px;
     font-size: 0.95rem;
   }
 
@@ -720,30 +721,9 @@ background-clip: text;
 }
 
 /*  Contact  */
-.contact {
-  background: radial-gradient(#e1efff, white);
-}
 
-.contact .title::after {
-  content: "—Get in Touch—";
-}
-
-.contact .contact-content .column {
-  width: calc(50% - 30px);
-}
-
-.contact .contact-content .text {
-  font-size: 2px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.contact .contact-content .left p {
+.contact .contact-content  p {
   text-align: justify;
-}
-
-.contact .contact-content .left .icons {
-  margin: 10px 0;
 }
 
 .contact .contact-content .row {
@@ -770,155 +750,45 @@ background-clip: text;
   color: #333;
 }
 
-.contact .right form .fields {
-  display: flex;
-}
-
-.contact .right form .field,
-.contact .right form .fields .field {
-  height: 45px;
+.contact  {
   width: 100%;
-  margin-bottom: 15px;
-}
-
-.contact .right form .textarea {
-  height: 80px;
-  width: 100%;
-}
-
-.contact .right form .name {
-  margin-right: 10px;
-}
-
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-  height: 100%;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 6px;
   outline: none;
   padding: 0 15px;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
+   background: gray;
 }
 
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-  border-color: #b3b3b3;
-}
-
-.contact .right form .textarea textarea {
-  padding-top: 10px;
-  resize: none;
-}
-
-.contact .right form .button-area {
-  display: flex;
-  align-items: center;
-}
-
-.right form .button-area button {
+.contactcard {
+  margin: 40%;
+  width: 50%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 5px;
+  line-height: 1.6rem;
   color: #fff;
-  display: block;
-  width: 160px !important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: #1e3551;
-  border: 2px solid #1e3551;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-left: 4px solid #4caf50; 
+  border-right: 4px solid red; 
+  transition: 0.3s ease;
+  font-size: 1rem;
+  background-color: white;
 }
 
-.right form .button-area button:hover {
-  color: #1e3551;
-  background: none;
-  animation: pulsate 1s ease-in-out;
+
+.contactcard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+  
 }
 
-/*  Social  */
-.col-4 {
-  background: #d8d8d8;
+
+.contactcard i {
+  color: #4caf50;
+  margin-right: 8px;
 }
 
-.social-menu ul {
-  position: absolute;
-  left: 20%;
-  padding: 0;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
-
-.social-menu ul li {
-  list-style: none;
-  margin: 0 15px;
-}
-
-.social-menu ul li .fa {
-  font-size: 30px;
-  line-height: 60px;
-  transition: 0.6s;
-  color: #000;
-}
-
-.social-menu ul li .fa:hover {
-  color: #fff;
-}
-
-.social-menu ul li a {
-  left: px;
-  right: 12px;
-  padding-top: 3px;
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #1e3551;
-  text-align: center;
-  transition: 0.6s;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-}
-
-.social-menu ul li a:hover {
-  transform: translate(0, -10px);
-}
-
-.social-menu ul li:nth-child(1) a:hover {
-  background-color: #131418;
-}
-
-.social-menu ul li:nth-child(2) a:hover {
-  background-color: #0a66c2;
-}
-
-.social-menu ul li:nth-child(3) a:hover {
-  background-color: #e4405f;
-}
-.social-menu ul li:nth-child(4) a:hover {
-  background-color: #1da1f2;
-}
-
-.social-menu ul li:nth-child(5) a:hover {
-  background-color: #e33054;
-}
-
-.social-menu ul li:nth-child(6) a:hover {
-  background-color: #fc4f08;
-}
-
-.fa-brands {
-  color: #fff;
-}
-
-.fa-solid {
-  color: #fff;
-}
 
 /*  Footer  */
 footer {
@@ -1015,10 +885,6 @@ footer span a:hover {
   }
   .about .about-content .right {
     flex: 100%;
-  }
-  .services .serv-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
   }
   .skills .skills-content .column,
   .contact .contact-content .column {

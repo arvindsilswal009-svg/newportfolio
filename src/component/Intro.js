@@ -45,7 +45,7 @@ function Intro() {
     <Education/>
       <Skills/>
       <Projects/>
-       <Contact/>
+     <center>  <Contact/></center>
         
       </>
     )
