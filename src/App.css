@@ -183,34 +183,49 @@ section .title::after {
 .navbar.sticky .menu li a:hover {
   color: #fff;
 }
-/* Desktop */
 
 .hamburger {
+  height: 30px;
+  max-height: fit-content;
+  margin-left: 30%;
   display: none;
-  font-size: 28px;
+  font-size: 10px;
   cursor: pointer;
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
   .menu {
-    position: absolute;
+    position: fixed;
     top: 70px;
-    right: 0;
-    background-color: #111;
+    right: -250px;   
     width: 200px;
+    background-color: #111;
+    padding: 10px;
+    display: flex;
     flex-direction: column;
-    padding: 20px;
-    display: none;
-    border-radius: 10px;
+    gap: 5px;
+    border-radius: 12px 0 0 12px;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    height: auto;
   }
 
   .menu.active {
-    display: flex;
+    right: 0;   
   }
 
   .hamburger {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    z-index: 10000;
+  }
+
+  
+  .menu li a  {
+    font-size: 10px;
   }
 }
 
@@ -396,9 +411,9 @@ background-clip: text;
   display: flex;
   background: url("/public/images/educationback.avif") no-repeat
     center;
-  height: 100vh;
+
   color: #fff;
-  min-height: 500px;
+  height: auto;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
@@ -420,19 +435,25 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-.education-content{
+.education-content {
   display: flex;
-  flex: 1;
-  gap: 100px;
+  flex-wrap: wrap;  
+  gap: 30px;  
+  width: 100%;
+  justify-content: center;       
+}
+
+.education .education-content .left,
+.education .education-content .right {
+  width: 48%; 
 
 }
-.education .education-content .left {
-  width: 100%;
-}
-.education .education-content .right {
-  width: 100%;
-}
+
 .educard {
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+
   background: #1d1d1d;
   padding: 20px;
   border-radius: 12px;
@@ -440,7 +461,7 @@ background-clip: text;
   line-height: 1.6rem;
   color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  border-left: 4px solid #4caf50; /* Green accent */
+  border-left: 4px solid #4caf50; 
   transition: 0.3s ease;
   font-size: 1rem;
 }
@@ -462,18 +483,12 @@ background-clip: text;
     flex-direction: column;
   }
 }
-
 @media (max-width: 600px) {
-  .educard {
-    padding: 10px;
-    font-size: 0.95rem;
-  }
-
-  .title1 {
-    font-size: 1.1rem;
+  .education .education-content .left,
+  .education .education-content .right {
+    width: 100%;   
   }
 }
-
 
 /*  Skills  */
 .skills {
@@ -721,19 +736,25 @@ background-clip: text;
 }
 
 /*  Contact  */
-
+.contact-content{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
 .contact .contact-content  p {
   text-align: justify;
 }
-
 .contact .contact-content .row {
   display: flex;
-  height: 65px;
   align-items: center;
+  flex-wrap: wrap;  
+  gap: 8px;
 }
 
+
 .contact .contact-content .row .info {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .contact .contact-content .row i {
@@ -758,22 +779,20 @@ background-clip: text;
   font-family: "Poppins", sans-serif;
    background: radial-gradient(#e1efff, white);
 }
-
 .contactcard {
-  margin-left: 25%;
-  width: 50%;
-  height: 200px;
-  padding: 10px;
+  width: 100%;
+  max-width: 360px; 
+  padding: 8px;
   border-radius: 12px;
-  margin-top: 5px;
-  line-height: 1.6rem;
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  border-left: 20px solid #4caf50; 
-  border-right: 20px solid red; 
-  transition: 0.3s ease;
-  font-size: 1.5rem;
+  margin-top: 10px;
   background-color: silver;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-left: 12px solid #4caf50; 
+  border-right: 12px solid red;
+  font-size: 1.1rem;
+  color: #000;
+
+  height: auto; 
 }
 
 
@@ -789,6 +808,27 @@ background-clip: text;
   margin-right: 8px;
 }
 
+@media (max-width: 900px) {
+  .contactcard{
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .contactcard {
+    font-size: 1rem;
+    padding: 15px;
+    border-left: 8px solid #4caf50;
+    border-right: 8px solid red;
+  }
+
+  .contact .contact-content .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .contact-content .info {
+    margin-left: 10px;
+  }
+}
 
 /*  Footer  */
 footer {
