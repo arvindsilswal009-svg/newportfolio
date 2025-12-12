@@ -5,13 +5,13 @@ function Nav() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/arvind-cv.pdf";
-    link.download = "arvind-cv.pdf";
+    link.href = "/Arvind-Cv.pdf";
+    link.download = "Arvind-Cv.pdf";
     link.click();
   };
 
   const handleMenuClick = () => {
-    setMenuOpen(false); // closes menu when selecting a link
+    setMenuOpen(false); 
   };
 
   return (
@@ -47,8 +47,8 @@ function Nav() {
           </a></li>
         </ul>
 
-        {/* HAMBURGER ICON */}
-        <div
+       
+        <div 
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
         >
