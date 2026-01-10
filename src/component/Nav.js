@@ -5,8 +5,8 @@ function Nav() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Arvind-Cv.pdf";
-    link.download = "Arvind-Cv.pdf";
+    link.href = "/arvind-cv.pdf";
+    link.download = "arvind-cv.pdf";
     link.click();
   };
 
