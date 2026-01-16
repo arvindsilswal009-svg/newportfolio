@@ -5,8 +5,8 @@ function Nav() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Arvind-Cv.pdf";
-    link.download = "Arvind-Cv.pdf";
+    link.href = `${process.env.PUBLIC_URL}/Arvind-Cv.pdf`;
+  link.download = "Arvind-Cv.pdf";
     link.click();
   };
 
@@ -18,12 +18,12 @@ function Nav() {
     <nav className="navbar">
       <div className="max-width">
 
-        {/* Logo */}
+       
         <div className="logo">
           <a href="#"><span>Arvind's</span> <span>Portfolio</span></a>
         </div>
 
-        {/* MENU LIST */}
+       
         <ul className={`menu ${menuOpen ? "active" : ""}`}>
           <li><a onClick={handleMenuClick} href="#home"><strong>Home</strong></a></li>
           <li><a onClick={handleMenuClick} href="#about"><strong>About</strong></a></li>
